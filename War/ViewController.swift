@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var playerScoreLabel: UILabel!
     @IBOutlet weak var cpuScoreLabel: UILabel!
     
+    let cardName = ["ace", "card2", "card3", "card4", "card5", "card6", "card7", "card8", "card9", "card10", "jack", "queen", "king"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -27,17 +29,17 @@ class ViewController: UIViewController {
     
     @IBAction func dealTapped(sender:UIButton) {
         
-        //randomize left number from 2 to 10
-        let leftNumber = arc4random_uniform(9) + 2
+        //randomize left number from 0 to 12
+        let leftNumber = Int(arc4random_uniform(13))
         
         //randomize left image
-        leftImageView.image = UIImage(named:"card\(leftNumber)")
+        leftImageView.image = UIImage(named:cardName[leftNumber])
         
-        //randomize right number from 2 to 10
-        let rightNumber = arc4random_uniform(9) + 2
+        //randomize right number from 0 to 12
+        let rightNumber = Int(arc4random_uniform(13))
         
         //randomize right image
-        rightImageView.image = UIImage(named:"card\(rightNumber)")
+        rightImageView.image = UIImage(named:cardName[rightNumber])
     }
 
 
