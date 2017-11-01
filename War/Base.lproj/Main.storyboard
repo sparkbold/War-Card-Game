@@ -58,6 +58,9 @@
                                             <constraint firstAttribute="width" secondItem="SKN-j7-Wyp" secondAttribute="height" multiplier="81:31" id="R3h-z8-7rv"/>
                                         </constraints>
                                         <state key="normal" image="dealbutton"/>
+                                        <connections>
+                                            <action selector="dealTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0eQ-qd-B3f"/>
+                                        </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="oUY-Yr-wzM" userLabel="ScoreLabelStackView">
                                         <rect key="frame" x="62.5" y="358.5" width="250" height="288.5"/>
