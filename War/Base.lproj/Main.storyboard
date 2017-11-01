@@ -115,6 +115,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="cpuScoreLabel" destination="T5L-mc-1Ww" id="Gm3-vg-zjJ"/>
+                        <outlet property="leftImageView" destination="POA-rP-T6D" id="h7P-Pi-slC"/>
+                        <outlet property="playerScoreLabel" destination="qcz-b6-NGH" id="zUb-Hx-r4L"/>
+                        <outlet property="rightImageView" destination="zbn-5S-NCN" id="StC-Ol-AcP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
