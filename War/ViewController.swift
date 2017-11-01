@@ -15,7 +15,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var playerScoreLabel: UILabel!
     @IBOutlet weak var cpuScoreLabel: UILabel!
     
-    let cardName = ["ace", "card2", "card3", "card4", "card5", "card6", "card7", "card8", "card9", "card10", "jack", "queen", "king"]
+    var playerScore = 0
+    var cpuScore = 0
+    
+    let cardName = ["card2", "card3", "card4", "card5", "card6", "card7", "card8", "card9", "card10", "jack", "queen", "king","ace"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,6 +48,8 @@ class ViewController: UIViewController {
         
         if leftNumber > rightNumber {
             //leftCardWin
+            playerScore += 1
+            playerScoreLabel.text = String(playerScore)
         }
         
         else if leftNumber == rightNumber {
@@ -53,6 +58,8 @@ class ViewController: UIViewController {
         
         else {
             //rightCardWin
+            cpuScore += 1
+            cpuScoreLabel.text = String(cpuScore)
         }
     }
 
