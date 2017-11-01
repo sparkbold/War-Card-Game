@@ -40,6 +40,20 @@ class ViewController: UIViewController {
         
         //randomize right image
         rightImageView.image = UIImage(named:cardName[rightNumber])
+        
+        //compare the card number
+        
+        if leftNumber > rightNumber {
+            //leftCardWin
+        }
+        
+        else if leftNumber == rightNumber {
+            //ItATie
+        }
+        
+        else {
+            //rightCardWin
+        }
     }
 
 
